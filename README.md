@@ -1,6 +1,6 @@
 # LDAP to Unix Timestamp Converter
 
-Active Directory timestamps are based on the Gregorian Calendar and are computed using the number of 100 nanosecond intervals since 1601-1-1 in 100 .
+Active Directory timestamps are based on the Gregorian Calendar and are computed using the number of 100 nanosecond intervals since `1601-1-1`.
 
 ## References
 
