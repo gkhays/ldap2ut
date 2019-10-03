@@ -24,5 +24,6 @@ $(document).ready(function () {
     console.log("Converted date: " + convertDate);
     $('#log').append("Human readable: " + convertDate + "\n");
     $('#converted').val(convertDate.getTime());
+    $('#convert').focus();
   });
 });
