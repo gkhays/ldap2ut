@@ -26,4 +26,8 @@ $(document).ready(function () {
     $('#converted').val(convertDate.getTime());
     $('#timestamp').focus();
   });
+  
+  $('#timestamp').change(function () {
+    $('#convert').attr('disabled', false);
+  });
 });
