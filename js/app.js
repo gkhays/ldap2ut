@@ -25,5 +25,10 @@ $(document).ready(function () {
     $('#log').append("Human readable: " + convertDate + "\n");
     $('#converted').val(convertDate.getTime());
     $('#timestamp').focus();
+    $('#convert').attr('disabled', true);
+  });
+  
+  $('#timestamp').change(function () {
+    $('#convert').attr('disabled', false);
   });
 });
