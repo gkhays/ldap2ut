@@ -1,6 +1,8 @@
 # LDAP to Unix Timestamp Converter
 
-Active Directory timestamps are based on the Gregorian Calendar and are computed using the number of 100 nanosecond intervals since 1601-1-1 in 100 .
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/gkhays/ldap2ut)
+
+Active Directory timestamps are based on the Gregorian Calendar and are computed using the number of 100 nanosecond intervals since `1601-1-1`.
 
 ## References
 

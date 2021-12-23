@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
 
   <title>Timestamp Converter</title>
 </head>
@@ -18,7 +19,7 @@
     <!-- <form> -->
     <div class="form-group">
       <label for="timestamp">LDAP Timestamp</label>
-      <input type="text" class="form-control" id="timestamp" value="132037089007761172" aria-describedby="basic-addon3">
+      <input type="number" min="100000" class="form-control" id="timestamp" value="132037089007761172" aria-describedby="basic-addon3">
     </div>
     <div class="form-group">
       <label for="convertOld">Unix Timestamp (Method 1)</label>
@@ -35,14 +36,35 @@
     <button type="submit" class="btn btn-primary" id="convert">Convert</button>
     <!-- </form> -->
 
+    <p> </p>
+    
+    <p><b>Examples</b>:</p>
+    <div class="codebox">
+      <pre>
+        <code>date +%s</code>
+        <code>date -d @1640290674</code>
+        
+        <code>date +%s -d"Jan 1, 1980 00:00:01"</code>
+        <code>w32tm.exe /ntte 131001091660000000</code>
+      </pre>
+    </div>
+
     <footer>
+      <h3>References</h3>
+      <ol class="list">
+        <li><a href="https://www.epochconverter.com/ldap" target="_blank">LDAP, Active Directory & Filetime Timestamp Converter</a></li>
+        <li><a href="https://www.epochconverter.com/" target="_blank">Epoch & Unix Timestamp Conversion Tools</a></li>
+        <li><a href="https://www.unixtimestamp.com/" target="_blank">Unix Timestamp - Epoch Converter</a></li>
+        <li><a href="https://stackoverflow.com/a/1092643/6146580" target="_blank">Get current time in seconds since the Epoch on Linux, Bash</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings#windows-time-service-tools" target="_blank">Windows Time service tools and settings | Using W32tm.exe</a></li>
+      </ol>
       <a href="https://github.com/gkhays/ldap2ut">Source Code</a>
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vanilla.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
