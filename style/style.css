@@ -1,3 +1,16 @@
 input:invalid {
-    border: 1px solid red;
+  border: 1px solid red;
+}
+
+.codebox {
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list {
+  font-family: sans-serif;
+  list-style-position: inside;
+  padding-left: 0;
 }
