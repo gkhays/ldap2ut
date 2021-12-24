@@ -40,3 +40,5 @@ $(document).ready(function () {
     $("#convert").attr("disabled", false);
   });
 });
+
+module.exports = ldapToUT;
