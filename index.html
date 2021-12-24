@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
 
   <title>Timestamp Converter</title>
 </head>
 
 <body>
+  <a class="github-fork-ribbon" href="https://github.com/gkhays/ldap2ut" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  
   <div class="container">
 
     <h1>Timestamp Converter</h1>
@@ -30,10 +33,14 @@
       <label for="converted">Unix Timestamp (Method 2)</label>
       <input type="text" class="form-control" id="converted" aria-describedby="basic-addon3" readonly>
     </div>
+    
     <div class="form-group">
-      <label for="log">Log</label>
-      <textarea class="form-control" id="log" rows="3"></textarea>
+      <details>
+          <summary><label for="log">Log</label></summary>
+          <textarea class="form-control" id="log" rows="3"></textarea>
+      </details>
     </div>
+
     <button type="submit" class="btn btn-primary" id="convert">Convert</button>
     <!-- </form> -->
 
@@ -50,8 +57,11 @@
       </pre>
     </div>
 
-    <footer>
-      <h3>References</h3>
+    <p></p>
+
+    <details>
+      <summary><b>References</b></summary>
+
       <ol class="list">
         <li><a href="https://www.epochconverter.com/ldap" target="_blank">LDAP, Active Directory & Filetime Timestamp Converter</a></li>
         <li><a href="https://www.epochconverter.com/" target="_blank">Epoch & Unix Timestamp Conversion Tools</a></li>
@@ -59,7 +69,21 @@
         <li><a href="https://stackoverflow.com/a/1092643/6146580" target="_blank">Get current time in seconds since the Epoch on Linux, Bash</a></li>
         <li><a href="https://docs.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings#windows-time-service-tools" target="_blank">Windows Time service tools and settings | Using W32tm.exe</a></li>
       </ol>
-      <a href="https://github.com/gkhays/ldap2ut">Source Code</a>
+
+    </details>
+
+    <p></p>
+
+    <footer>
+      <span>        
+        <p><small>
+          <a href="https://github.com/gkhays/ldap2ut" target="_blank">Source Code</a>
+          |
+          This project was written by <a href="https://twitter.com/GarveHays">Garve Hays</a>.
+          |
+          Credits: <a href="https://github.com/simonwhitaker/github-fork-ribbon-css" target="_blank">github-fork-ribbon-css</a>
+        </small></p>
+      </span>
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
